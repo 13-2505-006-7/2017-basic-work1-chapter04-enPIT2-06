@@ -11,11 +11,11 @@ import android.widget.TextView;
 
 import static com.example.u90684.janken.R.id.com_hand_image;
 
+
 public class ResultActivity extends AppCompatActivity {
     final int JANKEN_GU=0;
     final int JANKEN_CHOKI=1;
     final int JANKEN_PA=2;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -95,6 +95,7 @@ public class ResultActivity extends AppCompatActivity {
         editor.putInt("LAST_COM_HAND",comHand);
         editor.putInt("BEFORE_LAST_COM_HAND",lastComHand);
         editor.putInt("GAME_RESULT",gameResult);
+
 
         editor.commit();
     }
